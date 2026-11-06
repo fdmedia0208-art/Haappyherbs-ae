@@ -326,7 +326,7 @@ export default function Invitation() {
             <Lotus className="mx-auto mt-6 w-10" />
           </div>
           <p className="eyebrow mt-10 text-[10px] text-gold-deep">
-            <a href="https://haappyherbs.ae" target="_blank" rel="noopener noreferrer" className="transition hover:text-forest">
+            <a href="https://invite.haappyherbs.ae/" rel="noopener noreferrer" className="transition hover:text-forest">
               haappyherbs.ae
             </a>
           </p>
