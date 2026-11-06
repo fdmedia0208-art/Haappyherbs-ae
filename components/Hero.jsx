@@ -61,7 +61,7 @@ export default function Hero() {
           <CinemaVideo
             src="/media/hero.mp4"
             poster="/media/hero-poster.jpg"
-            label="Haappy Herbs brand film featuring Shruthika Arjun"
+            label="Haappy Herbs brand film featuring Shrutika Arjun"
             eager
             className="absolute inset-0 h-full w-full object-cover object-[50%_40%]"
             soundButtonClassName="bottom-4 right-4 lg:bottom-8 lg:right-8"
@@ -122,10 +122,10 @@ export default function Hero() {
 
         <motion.div {...rise(0.85)} className="mt-6 lg:mt-9">
           <p className="eyebrow text-[10px] text-gold-deep lg:text-[11px] lg:text-gold-light/90">
-            Featuring Special Guest
+            Join with our Emerging Founder
           </p>
           <p className="mt-1.5 font-display text-[34px] font-medium italic leading-none text-forest lg:text-[clamp(38px,3.2vw,54px)] lg:text-ivory">
-            Shruthika Arjun
+            Shrutika Arjun
           </p>
         </motion.div>
 

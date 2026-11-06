@@ -117,7 +117,7 @@ export default function Invitation() {
               <VideoFrame
                 src="/media/dubai.mp4"
                 poster="/media/dubai-poster.jpg"
-                label="Shruthika Arjun at BurJuman Mall, Dubai, as the store takes shape"
+                label="Shrutika Arjun at BurJuman Mall, Dubai, as the store takes shape"
                 caption="Our Dubai dream, taking shape"
               />
             </div>
@@ -163,7 +163,7 @@ export default function Invitation() {
 
             {/* Special guest */}
             <Reveal delay={0.05} className="mt-10">
-              <p className="eyebrow text-[10.5px] text-gold-deep">Special Guest</p>
+              <p className="eyebrow text-[10.5px] text-gold-deep">Join with our Emerging Founder</p>
               <div className="relative mx-auto mt-7 w-[min(62vw,250px)]">
                 <motion.div
                   initial={{ opacity: 0, scale: 1.06 }}
@@ -174,7 +174,7 @@ export default function Invitation() {
                 >
                   <img
                     src="/images/shruthika-portrait.webp"
-                    alt="Shruthika Arjun in a yellow silk saree, smiling"
+                    alt="Shrutika Arjun in a yellow silk saree, smiling"
                     width={800}
                     height={1000}
                     loading="lazy"
@@ -218,7 +218,7 @@ export default function Invitation() {
                 </motion.div>
               </div>
               <p className="mt-12 font-display text-[clamp(40px,11vw,56px)] font-medium italic leading-none text-forest">
-                Shruthika Arjun
+                Shrutika Arjun
               </p>
             </Reveal>
 
@@ -273,7 +273,7 @@ export default function Invitation() {
               <VideoFrame
                 src="/media/diwali.mp4"
                 poster="/media/diwali-poster.jpg"
-                label="Shruthika Arjun presents an exclusive silk saree collection"
+                label="Shrutika Arjun presents an exclusive silk saree collection"
                 caption="Drape yourself in exclusivity"
                 delay={0.15}
               />

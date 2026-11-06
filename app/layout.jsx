@@ -16,14 +16,14 @@ const siteUrl =
 
 const title = "Haappy Herbs Grand Launch · A Special Invitation";
 const description =
-  "You are warmly invited to the Grand Launch of Haappy Herbs – Beautiful Naturally, with Special Guest Shruthika Arjun. 15 November 2026, 4:00 PM · BurJuman Mall, 2nd Floor, Lobby E, Dubai.";
+  "You are warmly invited to the Grand Launch of Haappy Herbs – Beautiful Naturally, with our Emerging Founder Shrutika Arjun. 15 November 2026, 4:00 PM · BurJuman Mall, 2nd Floor, Lobby E, Dubai.";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
   applicationName: "Haappy Herbs",
-  keywords: ["Haappy Herbs", "Grand Launch", "Shruthika Arjun", "BurJuman Mall", "Dubai", "Ayurvedic skincare"],
+  keywords: ["Haappy Herbs", "Grand Launch", "Shrutika Arjun", "BurJuman Mall", "Dubai", "Ayurvedic skincare"],
   openGraph: {
     type: "website",
     url: "/",
@@ -31,7 +31,7 @@ export const metadata = {
     title,
     description,
     locale: "en_AE",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Haappy Herbs Grand Launch with Shruthika Arjun" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Haappy Herbs Grand Launch with Shrutika Arjun" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -62,7 +62,7 @@ const eventJsonLd = {
     name: "BurJuman Mall",
     address: { "@type": "PostalAddress", streetAddress: "2nd Floor, Lobby E", addressLocality: "Dubai", addressCountry: "AE" },
   },
-  performer: { "@type": "Person", name: "Shruthika Arjun" },
+  performer: { "@type": "Person", name: "Shrutika Arjun" },
   organizer: { "@type": "Organization", name: "Haappy Herbs", url: "https://haappyherbs.ae" },
 };
 
