@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #fbf6ec;
+  --color-ivory-deep: #f4ead6;
+  --color-parchment: #efe2c6;
+  --color-forest: #13341f;
+  --color-forest-deep: #0b2214;
+  --color-moss: #3f5e3a;
+  --color-gold: #b8893b;
+  --color-gold-deep: #8d6424;
+  --color-gold-light: #e6cb86;
+  --color-maroon: #6d1f2b;
+  --color-ink: #2a2a22;
+
+  --font-wordmark: "Cinzel", "Times New Roman", serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --ease-lux: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background: var(--color-ivory);
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold-light);
+  color: var(--color-forest-deep);
+}
+
+/* Metallic gold text */
+.gold-text {
+  background-image: linear-gradient(
+    100deg,
+    #87581b 0%,
+    #c99a48 18%,
+    #f2dc9a 34%,
+    #b8893b 52%,
+    #f6e3a8 70%,
+    #9b6a25 88%,
+    #c99a48 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gold-sheen 9s ease-in-out infinite;
+}
+
+@keyframes gold-sheen {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+}
+
+/* Paper texture for the invitation card */
+.paper {
+  background-color: #fcf8ef;
+  background-image:
+    radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(90% 60% at 100% 100%, rgba(230, 203, 134, 0.18), rgba(230, 203, 134, 0) 70%),
+    radial-gradient(90% 60% at 0% 100%, rgba(63, 94, 58, 0.06), rgba(63, 94, 58, 0) 70%);
+}
+
+@layer components {
+/* Arch frame used for the mobile hero video and guest portrait */
+.arch {
+  border-radius: 999px 999px 22px 22px;
+}
+
+.gold-ring {
+  box-shadow:
+    0 0 0 1px rgba(184, 137, 59, 0.95),
+    0 0 0 7px var(--color-ivory),
+    0 0 0 8px rgba(184, 137, 59, 0.55),
+    0 30px 60px -28px rgba(19, 52, 31, 0.45);
+}
+
+.gold-frame {
+  box-shadow:
+    0 0 0 1px rgba(184, 137, 59, 0.9),
+    0 0 0 6px #fcf8ef,
+    0 0 0 7px rgba(184, 137, 59, 0.45),
+    0 28px 60px -30px rgba(11, 34, 20, 0.5);
+}
+
+}
+
+/* Botanical sway */
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-2.2deg);
+  }
+  50% {
+    transform: rotate(2.4deg);
+  }
+}
+.sway {
+  animation: sway 9s ease-in-out infinite;
+  transform-origin: var(--origin, 0% 0%);
+}
+.sway-slow {
+  animation: sway 13s ease-in-out infinite;
+  transform-origin: var(--origin, 0% 0%);
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+.nudge {
+  animation: nudge 2.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .gold-text,
+  .sway,
+  .sway-slow,
+  .nudge {
+    animation: none !important;
+  }
+}
+
+/* Tidy focus states */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
